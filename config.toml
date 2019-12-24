@@ -1,0 +1,206 @@
+baseURL = "https://ak1ra24.github.io/"
+languageCode = "en-us"
+title = "ak1ra24 Portfolio"
+theme = "aafu"
+# Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
+hasCJKLanguage = true
+
+[params]
+    title = "ak1ra24 Portfolio"
+    author = "ak1ra24"
+    description = "ak1ra24 portfolio"
+    copyright = "Shogo Maeda"
+
+    [params.theme]
+        allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "dark"
+        altTheme = "light"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = true
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Shogo Maeda"
+		tagline = "ak1ra24"
+		location = "Tokyo, Japan"
+        photo = "profile.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-linkedin-in"
+            url = "#"
+            title = "LinkedIn"		
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-blogger-b"
+            url = "https://ak1ra24.github.io/blog"
+            title = "Blog"
+        [[params.social.list]]
+            class = "fas"
+            icon = "fa-book"
+            url = "https://ak1ra24.github.io/memo"
+            title = "Wiki"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/ak1ra24"
+            title = "GitHub"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-twitter"
+            url = "https://twitter.com/akiranet2580"
+            title = "Twitter"
+		[[params.social.list]]
+            class = "fab"
+            icon = "fa-docker"
+            url = "https://hub.docker.com/u/akiranet24"
+            title = "DockerHub"
+		[[params.social.list]]
+            class = "fab"
+            icon = "fa-facebook"
+            url = "https://www.facebook.com/maeda.shogo.94"
+            title = "Facebook"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "ネットワークやクラウドに興味のある学生.Go/Pythonを主に書いています。"
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Infra Team"
+            dates = "2019/09 - Present"
+            company = "SECCON NOC"
+            details = ""
+        [[params.experience.list]]
+            position = "Infra Team"
+            dates = "2018/04 - Present"
+            company = "SECCON Beginners"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship (part-time job)"
+            dates = "2019/06 - 2019/09"
+            company = "National Institute of Information and Communications Technology"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship"
+            dates = "2019/01 - 2019/01 (4weeks)"
+            company = "NTT"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship (part-time job)"
+            dates = "2018/09 - 2018/12"
+            company = "Yahoo Japan"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship"
+            dates = "2018/08 - 2018/08 (3weeks)"
+            company = "Yahoo Japan"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship (part-time job)"
+            dates = "2017/11 - 2018/03"
+            company = "Cybozu Inc"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship"
+            dates = "2017/08 - 2017/08 (2weeks)"
+            company = "Cybozu Inc"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship"
+            dates = "2017/02 - 2017/02 (2weeks)"
+            company = "NTT Communication"
+            details = ""
+        [[params.experience.list]]
+            position = "Internship"
+            dates = "2017/02 - 2017/02 (2weeks)"
+            company = "GMO Pepabo Inc"
+            details = ""
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "Master"
+            college = "Hosei University Graduate school,  Faculty of Science and Engineering"
+            dates = "2018 - Present"
+        [[params.education.list]]
+            degree = "Bachelor"
+            college = "Hosei University, Faculty of Science and Engineering"
+            dates = "2014 - 2018"
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "tinet-go"
+            url = "https://github.com/ak1ra24/tinet-go"
+            description = ""
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "Go"
+            skillrating = 60
+        [[params.skill.list]]
+            skill = "Python"
+            skillrating = 50
+        [[params.skill.list]]
+            skill = "javascript"
+            skillrating = 50
+        [[params.skill.list]]
+            skill = "C"
+            skillrating = 40
+        [[params.skill.list]]
+            skill = "Network"
+            skillrating = 40
+
+    # Hobby section
+    [params.hobby]
+        title = "Hobbies"
+        icon = "fas fa-film"
+		
+        [[params.hobby.list]]		
+		    hobby = "Movie"
+        [[params.hobby.list]]		
+		    hobby = "Comic"
+        [[params.hobby.list]]		
+		    hobby = "Anime"
