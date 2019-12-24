@@ -120,7 +120,7 @@ hasCJKLanguage = true
         [[params.experience.list]]
             position = "Internship (part-time job)"
             dates = "2018/09 - 2018/12"
-            company = "Yahoo Japan"
+            company = "HERP Inc"
             details = ""
         [[params.experience.list]]
             position = "Internship"
